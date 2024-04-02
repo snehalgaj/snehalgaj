@@ -6,6 +6,9 @@ body{
     width: 100px;
     margin: 10px;
     border: none;
+    background-color: rgb(138, 205, 146);
+    border-radius: 50px;
+    cursor: pointer;
 }
 .choice-image{
     height: 75px;
