@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat Ball Stump Game</title>
+    <link rel="stylesheet" href="Cricket.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Bat Ball Stump Game</h1>
+
+   
+
+    <button class="choice-button" onclick=" computerChoice = genrateComputerChoice();
+        let resultMsg=getResult('Bat',computerChoice)
+        showResult('Bat',computerChoice,resultMsg)">
+        <img src="images/bat.png" alt="bat Image" class="choice-image"/>
+    </button>
+
+
+    <button class="choice-button" onclick=" computerChoice =genrateComputerChoice()
+            resultMsg=getResult('Ball',computerChoice)
+            showResult('Ball',computerChoice,resultMsg)">
+       <img src="images/ball.png" alt="Ball Image" class="choice-image"/>
+    </button>
+
+
+    <button class="choice-button" onclick=" computerChoice = genrateComputerChoice()
+            resultMsg=getResult('Stump',computerChoice)
+            showResult('Stump',computerChoice,resultMsg)">
+       <img src="images/stump.png" alt="Stump Image" class="choice-image"/>
+    </button>
+
+  <h3 class="user-move"></h3>
+  <h3 class="comp-move"></h3>
+  <h3 class="result"></h3>
+  <h3 class="score"></h3>
+
+    <button class="" onclick="localStorage.clear() 
+  ResetScore()">Reset</button>
+    <!-- <script src="batBallStump.js"> -->
+    <script src="batBallStump.js">
+
+    </script>
+</body>
+
+</html>
