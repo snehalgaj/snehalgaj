@@ -1,8 +1,8 @@
-let scoreStr = localStorage.getItem("score");
+let scoreStr = localStorage.getItem("Score");
 let score;
-ResetScore(scoreStr);
+resetScore(scoreStr);
 
-function ResetScore(scoreStr) {
+function resetScore(scoreStr) {
   score = scoreStr
     ? JSON.parse(scoreStr)
     : {
@@ -64,7 +64,7 @@ const getResult = (userMove, computerMove) => {
   }
 };
 function showResult(userMove, computerMove, result) {
-  localStorage.setItem("score", JSON.stringify(score));
+  localStorage.setItem("Score", JSON.stringify(score));
   console.log(score);
 
   document.querySelector(".user-move").innerText = userMove
